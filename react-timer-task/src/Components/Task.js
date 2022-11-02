@@ -1,5 +1,8 @@
 import React from 'react'
 
+
+
+
 const Task = ({ list, updateList }) => {
   const handleDelete = (id) => {
     let mockArr = list
@@ -14,6 +17,8 @@ const Task = ({ list, updateList }) => {
   }
   console.log(list)
   return (
+    <>
+    
     <div className='container'>
       <h2 className='my-3' >Task</h2>
 
@@ -31,6 +36,7 @@ const Task = ({ list, updateList }) => {
 
 
     </div>
+    </>
   )
 }
 
