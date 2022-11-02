@@ -35,7 +35,7 @@ height: 550px;
   text-align: center;
 }
 .stopwatch span{
-  background:linear-gradient(155.52deg, #F8C7C8 18.54%, #FAC1C2 24.61%, #FEB6B8 42.81%, #FFB2B4 61.01%);
+  background:linear-gradient(155.52deg, #f57375 18.54%, #f57375 24.61%, #f77b7f 42.81%, #eb777b 61.01%);
   color: #fff;
   display: inline-block;
   font-family: monospace;
@@ -93,11 +93,18 @@ color: #fff;
 
 
 button[disabled]{
-  background-color: rgb(236, 233, 233) !important;
-  color: rgb(216, 216, 216) !important;
+  background: rgb(255, 255, 255) !important;
+  color: rgb(41, 40, 40) !important;
+
   cursor: not-allowed !important;
-  border: 2px solid rgb(216, 216, 216) !important;
+  border: 2px solid rgb(41, 40, 40) !important;
 }
 .btn-close{
   margin: 0px !important;
+
+}
+.task-list span{
+  color: #fff;
+  font: 15px;
+  text-transform: capitalize;
 }

@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import DisplayComponent from './DisplayComponent';
 import BtnComponent from './BtnComponent';
 
-function Timer(){
+function Timer(props){
     const [time, setTime] = useState({ms:0, s:0, m:0, h:0});
     const [interv, setInterv] = useState();
     const [status, setStatus] = useState(0);
@@ -55,7 +55,7 @@ function Timer(){
        <div className="clock-holder">
             <div className="stopwatch">
                  <DisplayComponent time={time}/>
-                 <BtnComponent status={status} resume={resume} reset={reset} stop={stop} start={start}/>
+                 <BtnComponent status={status} resume={resume} reset={reset} stop={stop} start={start}  time={time}  list={props.list} updateList={props.updateList} />
             </div>
        </div>
       </div>
